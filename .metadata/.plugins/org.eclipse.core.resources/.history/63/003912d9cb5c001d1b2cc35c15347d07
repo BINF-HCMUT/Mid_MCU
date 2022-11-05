@@ -1,0 +1,13 @@
+/*
+ * fsm_countdown.c
+ *
+ *  Created on: Nov 5, 2022
+ *      Author: admin
+ */
+
+#include "fsm_countdown.h"
+#include "7segment.h"
+void fsm_countdown(){
+	display7Segment(status&10);
+
+}

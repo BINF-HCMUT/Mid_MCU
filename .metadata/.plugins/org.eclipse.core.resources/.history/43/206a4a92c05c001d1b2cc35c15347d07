@@ -1,0 +1,12 @@
+/*
+ * fsm_longpress_button_run.c
+ *
+ *  Created on: Nov 5, 2022
+ *      Author: admin
+ */
+
+#include"fsm_longpress_button_run.h"
+#include"7segment.h"
+void fsm_longpress_button_run(){
+
+}

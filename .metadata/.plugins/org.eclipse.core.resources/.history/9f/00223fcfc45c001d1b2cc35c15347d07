@@ -1,0 +1,21 @@
+#ifndef INC_GLOBAL_H_
+#define INC_GLOBAL_H_
+
+#include"button.h"
+#include"software_timer.h"
+
+#define count0	0;
+#define count1	1;
+#define count2	2;
+#define count3	3;
+#define count4	4;
+#define count5	5;
+#define count6	6;
+#define count7	7;
+#define count8	8;
+#define count9	9;
+
+
+extern int status;
+
+#endif /* INC_GLOBAL_H_ */

@@ -1,0 +1,19 @@
+/*
+ * 7segment.c
+ *
+ *  Created on: Nov 3, 2022
+ *      Author: admin
+ */
+
+uint8_t segmentNumber[10] = {
+	0x40,	//0
+	0x79,	//1
+	0x24,	//2
+	0x30,	//3
+	0x19,	//4
+	0x12,	//5
+	0x02,	//6
+	0x78,	//7
+	0x00,	//8
+	0x10	//9
+};

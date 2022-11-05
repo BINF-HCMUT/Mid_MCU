@@ -1,0 +1,12 @@
+/*
+ * global.c
+ *
+ *  Created on: Nov 3, 2022
+ *      Author: admin
+ */
+
+
+#include "global.h"
+#include "software_timer.h"
+int status = 0;
+setTimer1(1000);

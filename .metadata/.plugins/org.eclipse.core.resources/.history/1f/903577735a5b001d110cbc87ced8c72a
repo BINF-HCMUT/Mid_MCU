@@ -1,0 +1,21 @@
+#ifndef INC_GLOBAL_H_
+#define INC_GLOBAL_H_
+
+#include"button.h"
+#include"software_timer.h"
+
+
+#define INIT	1
+
+
+#define MODE1_RED		2
+#define MODE1_GREEN	3
+#define MODE1_YELLOW	4
+
+#define MAN_RED	11
+#define MAN_YELLOW 12
+#define MAN_GREEN 13
+
+extern int status;
+
+#endif /* INC_GLOBAL_H_ */

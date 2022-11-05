@@ -1,0 +1,140 @@
+/*
+ * fsm_simple_button_run.c
+ *
+ *  Created on: Nov 5, 2022
+ *      Author: admin
+ */
+
+
+#include"fsm_simple_button_run.h"
+#include"7segment.h"
+void fsm_simple_button_run(){
+	if(timer1_flag == 1){
+		setTimer1(1000);
+		HAL_GPIO_TogglePin(RED_GPIO_Port, RED_Pin);
+	}
+	switch(status){
+	case manual_0:
+		display7Segment(status);
+		if(isPRESS(1)){
+			status = manual_0;
+		}
+		if(isPRESS(2) || isPRESS1s(2)){
+			status = manual_1;
+		}
+		if(isPRESS(3) || isPRESS1s(2)){
+			status = manual_9;
+		}
+		break;
+	case manual_1:
+		display7Segment(status);
+		if(isPRESS(1)){
+			status = manual_0;
+		}
+		if(isPRESS(2) || isPRESS1s(2)){
+			status = manual_2;
+		}
+		if(isPRESS(3) || isPRESS1s(3)){
+			status = manual_0;
+		}
+		break;
+	case manual_2:
+		display7Segment(status);
+		if(isPRESS(1)){
+			status = manual_0;
+		}
+		if(isPRESS(2) || isPRESS1s(2)){
+			status = manual_3;
+		}
+		if(isPRESS(3) || isPRESS1s(3)){
+			status = manual_1;
+		}
+		break;
+	case manual_3:
+		display7Segment(status);
+		if(isPRESS(1)){
+			status = manual_0;
+		}
+		if(isPRESS(2) || isPRESS1s(2)){
+			status = manual_4;
+		}
+		if(isPRESS(3) || isPRESS1s(3)){
+			status = manual_2;
+		}
+		break;
+	case 4:
+		display7Segment(status);
+		if(isPRESS(1)){
+			status = 0;
+		}
+		if(isPRESS(2) || isPRESS1s(2)){
+			status = 5;
+		}
+		if(isPRESS(3) || isPRESS1s(3)){
+			status = 3;
+		}
+		break;
+	case 5:
+		display7Segment(status);
+		if(isPRESS(1)){
+			status = 0;
+		}
+		if(isPRESS(2) || isPRESS1s(2)){
+			status = 6;
+		}
+		if(isPRESS(3) || isPRESS1s(3)){
+			status = 4;
+		}
+		break;
+	case 6:
+		display7Segment(status);
+		if(isPRESS(1)){
+			status = 0;
+		}
+		if(isPRESS(2) || isPRESS1s(2)){
+			status = 7;
+		}
+		if(isPRESS(3) || isPRESS1s(3)){
+			status = 5;
+		}
+		break;
+	case 7:
+		display7Segment(status);
+		if(isPRESS(1)){
+			status = 0;
+		}
+		if(isPRESS(2) || isPRESS1s(2)){
+			status = 8;
+		}
+		if(isPRESS(3) || isPRESS1s(3)){
+			status = 6;
+		}
+		break;
+	case 8:
+		display7Segment(status);
+		if(isPRESS(1)){
+			status = 0;
+		}
+		if(isPRESS(2) || isPRESS1s(2)){
+			status = 9;
+		}
+		if(isPRESS(3) || isPRESS1s(3)){
+			status = 7;
+		}
+		break;
+	case 9:
+		display7Segment(status);
+		if(isPRESS(1)){
+			status = 0;
+		}
+		if(isPRESS(2) || isPRESS1s(2)){
+			status = 0;
+		}
+		if(isPRESS(3) || isPRESS1s(3)){
+			status = 8;
+		}
+		break;
+	default:
+		break;
+	}
+}

@@ -1,0 +1,21 @@
+#ifndef INC_GLOBAL_H_
+#define INC_GLOBAL_H_
+
+#include"button.h"
+#include"software_timer.h"
+
+#define down0	0;
+#define down1	1;
+#define down2	2;
+#define down3	3;
+#define down4	4;
+#define down5	5;
+#define down6	6;
+#define down7	7;
+#define down8	8;
+#define down9	9;
+
+
+extern int status;
+
+#endif /* INC_GLOBAL_H_ */

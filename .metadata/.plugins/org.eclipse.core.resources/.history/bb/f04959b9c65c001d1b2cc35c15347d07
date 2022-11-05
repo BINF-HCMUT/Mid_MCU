@@ -1,0 +1,34 @@
+#ifndef INC_GLOBAL_H_
+#define INC_GLOBAL_H_
+
+#include"button.h"
+#include"software_timer.h"
+
+#define auto_0 	10;
+#define auto_1 	11;
+#define auto_2 	12;
+#define auto_3 	13;
+#define auto_4 	14;
+#define auto_5 	15;
+#define auto_6 	16;
+#define auto_7 	17;
+#define auto_8 	18;
+#define auto_9 	19;
+
+#define manual_0	0;
+#define manual_1	1;
+#define manual_2	2;
+#define manual_3	3;
+#define manual_4	4;
+#define manual_5	5;
+#define manual_6	6;
+#define manual_7	7;
+#define manual_8	8;
+#define manual_9	9;
+
+
+
+
+extern int status;
+
+#endif /* INC_GLOBAL_H_ */

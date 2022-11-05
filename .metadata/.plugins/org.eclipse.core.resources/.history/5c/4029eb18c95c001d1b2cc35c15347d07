@@ -1,0 +1,35 @@
+/*
+ * fsm_countdown.c
+ *
+ *  Created on: Nov 5, 2022
+ *      Author: admin
+ */
+
+#include"fsm_countdown.h"
+
+void fsm_countdown(){
+	switch(status){
+	case 10:
+		break;
+	case 11:
+		break;
+	case 12:
+		break;
+	case 13:
+		break;
+	case 14:
+		break;
+	case 15:
+		break;
+	case 16:
+		break;
+	case 17:
+		break;
+	case 18:
+		break;
+	case 19:
+		break;
+	default:
+		break;
+	}
+}

@@ -1,0 +1,24 @@
+16:05:17 **** Incremental Build of configuration Debug for project mini_project ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/fsm_simple_button_run.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/fsm_simple_button_run.d" -MT"Core/Src/fsm_simple_button_run.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/fsm_simple_button_run.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "mini_project.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\BK\HK221\MPU_MCU\Lab\Mini_project\mini_project\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="mini_project.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: mini_project.elf
+ 
+arm-none-eabi-size   mini_project.elf 
+arm-none-eabi-objdump -h -S  mini_project.elf  > "mini_project.list"
+arm-none-eabi-objcopy  -O ihex  mini_project.elf  "mini_project.hex"
+arm-none-eabi-objcopy  -O binary  mini_project.elf  "mini_project.bin"
+   text	   data	    bss	    dec	    hex	filename
+   9724	     96	   1688	  11508	   2cf4	mini_project.elf
+Finished building: default.size.stdout
+ 
+Finished building: mini_project.hex
+Finished building: mini_project.bin
+ 
+ 
+Finished building: mini_project.list
+ 
+
+16:05:17 Build Finished. 0 errors, 0 warnings. (took 603ms)
+

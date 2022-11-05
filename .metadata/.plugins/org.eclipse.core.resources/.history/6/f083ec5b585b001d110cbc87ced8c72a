@@ -1,0 +1,17 @@
+#ifndef INC_BUTTON_H_
+#define INC_BUTTON_H_
+#include "main.h"
+
+#define NORMAL_STATE SET
+#define PRESSED_STATE RESET
+
+extern int button_flag[3];
+extern int button1s_flag[3];
+
+unsigned char isPRESS(unsigned char i);
+unsigned char isPRESS1s(unsigned char i);
+void getKeyInput();
+void resetFlag(int i);
+void resetFlag1s(int i);
+
+#endif /* INC_BUTTON_H_ */
